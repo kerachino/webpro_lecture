@@ -83,12 +83,52 @@
         改行可能であることを示すし、主に英語のアルファベットのみで書かれた文章で用い、適度に文章を改行する。<br>
         <!--wbr-->
         <p style="width:100px;">How<wbr>Much<wbr>Wood<wbr>Would<wbr>A<wbr>Woodchuck<wbr>Chuck<wbr>If<wbr>A<wbr>Woodchuck<wbr>Could<wbr>Chuck<wbr>Wood.</p>
-        <figure class="sc">
 
+        <figure class="sc">
         <pre><code>
   &lt;!--wbr--&gt;
   &lt;p style=&quot;width:100px;&quot;&gt;How&lt;wbr&gt;Much&lt;wbr&gt;Wood&lt;wbr&gt;Would&lt;wbr&gt;A&lt;wbr&gt;Woodchuck&lt;wbr&gt;Chuck&lt;wbr&gt;If&lt;wbr&gt;A&lt;wbr&gt;Woodchuck&lt;wbr&gt;Could&lt;wbr&gt;Chuck&lt;wbr&gt;Wood.&lt;/p&gt;
 
+        </code></pre>
+      </figure>
+    </ul>
+
+    <ul class="main">
+      <li class="headline">rubyの使い方</li>
+        漢字の読み仮名を振ってたりする際に使用する。ルビを振るから来ている。なおfirefoxでしか対応しておらず工夫が必要である<br>
+        <!--wbr-->
+        <ruby>・firefoxのみ対応&nbsp;&nbsp;
+          <rb>電</rb>
+          <rb>脳</rb>
+          <rt>パソ</rt>
+          <rt>コン</rt>
+        </ruby>
+
+        <br>・工夫したもの&nbsp;&nbsp;
+        <ruby>
+        	<rb>薔薇</rb>
+        	<rp>（</rp>
+        	<rt>バラ</rt>
+        	<rp>）</rp>
+        </ruby>
+
+        <figure class="sc">
+        <pre><code>
+  &lt;!--wbr--&gt;
+  &lt;ruby&gt;・firefoxのみ対応&amp;nbsp;&amp;nbsp;
+    &lt;rb&gt;電&lt;/rb&gt;
+    &lt;rb&gt;脳&lt;/rb&gt;
+    &lt;rt&gt;パソ&lt;/rt&gt;
+    &lt;rt&gt;コン&lt;/rt&gt;
+  &lt;/ruby&gt;
+
+  &lt;br&gt;・工夫したもの&amp;nbsp;&amp;nbsp;
+  &lt;ruby&gt;
+  	&lt;rb&gt;薔薇&lt;/rb&gt;
+  	&lt;rp&gt;（&lt;/rp&gt;
+  	&lt;rt&gt;バラ&lt;/rt&gt;
+  	&lt;rp&gt;）&lt;/rp&gt;
+  &lt;/ruby&gt;
         </code></pre>
       </figure>
     </ul>
