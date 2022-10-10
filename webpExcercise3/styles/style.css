@@ -1,0 +1,83 @@
+html {
+  font-size: 15px;
+  font-family: 'YuGothic', sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+html {
+  background-color: #FF74B1;
+}
+body{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.title{
+  background-color: #C798F0;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+.main{
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+.headline{
+  color:#083AA9;
+  font-weight: bold;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #A7FFE4;
+  text-shadow: 3px 3px 1px black;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px){
+  body {
+    width: 100%;
+  }
+}
+
+footer .plofile_text{
+  color:#36E72E;
+  text-shadow: 2px 2px 1px black;
+  font-weight: bold;
+}
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+  background-color: #FFF7E9;
+  border: 5px solid black;
+}
+.footer-text {
+  color: #fff;
+}
+
+
+figure.sc {
+  margin: 0px 0%;
+}
+figure.sc pre {
+  background: #eee;
+  color: #333;
+  font-size: 1rem;
+  padding: 0%;
+  overflow-x: scroll;
+}

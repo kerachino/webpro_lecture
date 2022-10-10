@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+    <script src="scripts/main.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"><!--リスポンス-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/icon.png">
+  </head>
+  <body>
+    <div class="title">
+      <h1>WEB PROGRAMING1</h1>
+    </div>
+    <ul class="main">
+      <li class="headline">optgroupの使い方</li>
+        slect内でoptgroupを使用すると、プルダウンメニューにおいて選択肢のグループ分けができるようになる。
+        <!--optgroup-->
+        <form action="#####" method="post">
+          <strong style="font-size:15px;">腕</strong>
+        <select name="studio">
+        <optgroup label="ある">
+          <option value="marshall" label="枕">枕</option>
+          <option value="mesa" label="たて">たて</option>
+          <option value="fender" label="相撲">相撲</option>
+          <option value="roland" label="時計">時計</option>
+        </optgroup>
+
+        <optgroup label="ない">
+          <option value="ampeg" label="布団">布団</option>
+          <option value="gibson" label="よこ">よこ</option>
+          <option value="hartke" label="サッカー">サッカー</option>
+          <option value="peavey" label="スマホ">スマホ</option>
+        </optgroup>
+        </select>
+        <input type="submit" value="決定">
+        </form>
+
+        <figure class="sc">
+        <pre><code>
+  &lt;!--optgroup--&gt;
+  &lt;form action=&quot;#####&quot; method=&quot;post&quot;&gt;
+    &lt;strong style=&quot;font-size:15px;&quot;&gt;腕&lt;/strong&gt;
+  &lt;select name=&quot;studio&quot;&gt;
+  &lt;optgroup label=&quot;ある&quot;&gt;
+    &lt;option value=&quot;marshall&quot; label=&quot;枕&quot;&gt;枕&lt;/option&gt;
+    &lt;option value=&quot;mesa&quot; label=&quot;たて&quot;&gt;たて&lt;/option&gt;
+    &lt;option value=&quot;fender&quot; label=&quot;相撲&quot;&gt;相撲&lt;/option&gt;
+    &lt;option value=&quot;roland&quot; label=&quot;時計&quot;&gt;時計&lt;/option&gt;
+  &lt;/optgroup&gt;
+
+  &lt;optgroup label=&quot;ない&quot;&gt;
+    &lt;option value=&quot;ampeg&quot; label=&quot;布団&quot;&gt;布団&lt;/option&gt;
+    &lt;option value=&quot;gibson&quot; label=&quot;よこ&quot;&gt;よこ&lt;/option&gt;
+    &lt;option value=&quot;hartke&quot; label=&quot;サッカー&quot;&gt;サッカー&lt;/option&gt;
+    &lt;option value=&quot;peavey&quot; label=&quot;スマホ&quot;&gt;スマホ&lt;/option&gt;
+  &lt;/optgroup&gt;
+  &lt;/select&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;決定&quot;&gt;
+        </code></pre>
+      </figure>
+    </ul>
+
+    <ul class="main">
+      <li class="headline">accesskeyの使い方</li>
+        alt + 設定したaccesskeyでリンク先に移動することができる。なおブラウザや使用環境によって異なり、Macやfirefoxはalt + shift + accesskeyとなっている。<br>
+        <!--accesskey-->
+        <a href="http://abehiroshi.la.coocan.jp" accesskey="y" target="_blank" rel="noopener noreferrer">阿部寛を呼ぶ</a><br>
+        <a href="http://natori-yuko.main.jp" accesskey="g" target="_blank" rel="noopener noreferrer">名取裕子を呼ぶ</a>
+
+        <figure class="sc">
+        <pre><code>
+  &lt;!--accesskey--&gt;
+  &lt;a href=&quot;http://abehiroshi.la.coocan.jp&quot; accesskey=&quot;y&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;阿部寛を呼ぶ&lt;/a&gt;&lt;br&gt;
+  &lt;a href=&quot;http://natori-yuko.main.jp&quot; accesskey=&quot;g&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;名取裕子を呼ぶ&lt;/a&gt;
+        </code></pre>
+      </figure>
+    </ul>
+
+    <ul class="main">
+      <li class="headline">wbrの使い方</li>
+        改行可能であることを示すし、主に英語のアルファベットのみで書かれた文章で用い、適度に文章を改行する。<br>
+        <!--wbr-->
+        <p style="width:100px;">How<wbr>Much<wbr>Wood<wbr>Would<wbr>A<wbr>Woodchuck<wbr>Chuck<wbr>If<wbr>A<wbr>Woodchuck<wbr>Could<wbr>Chuck<wbr>Wood.</p>
+        <figure class="sc">
+
+        <pre><code>
+  &lt;!--wbr--&gt;
+  &lt;p style=&quot;width:100px;&quot;&gt;How&lt;wbr&gt;Much&lt;wbr&gt;Wood&lt;wbr&gt;Would&lt;wbr&gt;A&lt;wbr&gt;Woodchuck&lt;wbr&gt;Chuck&lt;wbr&gt;If&lt;wbr&gt;A&lt;wbr&gt;Woodchuck&lt;wbr&gt;Could&lt;wbr&gt;Chuck&lt;wbr&gt;Wood.&lt;/p&gt;
+
+        </code></pre>
+      </figure>
+    </ul>
+
+    <ul class="main">  参考サイト：<a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html" target="_blank" rel="noopener noreferrer">https://html.spec.whatwg.org/multipage/text-level-semantics.html</a></ul>
+    <footer><p class="plofile_text">5421077 吉田捷馬 <br>日本大学文理学部情報科学科 Webプログラミングの演習課題</p>
+      <p>Copyright(C)2022 Shoma Yoshida</p>
+      当サイト内は大学内の教員,生徒のみの閲覧を許可し、著作権法第35条に同意したとみなします。<br>
+      リンクに関して、当サイトとは全く関係のない第3者が作成したものとなります。
+    </footer>
+
+
+</body></html>
