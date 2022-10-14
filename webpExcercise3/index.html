@@ -4,16 +4,34 @@
     <meta charset="utf-8">
     <title>My test page</title>
     <script src="scripts/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollgress/2.0.0/scrollgress.min.js"></script>
+    <script src="scrips/scroll.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1.0"><!--リスポンス-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css"><!--top-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="images/icon.png">
   </head>
   <body>
-    <div class="title">
+    <div id="page_top"><a href="#"></a></div>
+    <div class="box title">
       <h1>WEB PROGRAMING1</h1>
     </div>
-    <ul class="main">
+
+    <!--ヘッダー-->
+    <div class="box" id="head">
+      <div class="inner">
+        <p class="logo"><a class="over" href="#">list</a></p>
+        <ul class="navi">
+          <li><a href="#box1">課題1</a></li>
+          <li><a href="#box2">課題2</a></li>
+          <li><a href="#box3">課題3</a></li>
+          <li><a href="#box4">課題4</a></li>
+        </ul>
+      </div>
+    </div>
+      <!--ー-->
+    <ul class="box main" id="box1">
       <li class="headline">optgroupの使い方</li>
         slect内でoptgroupを使用すると、プルダウンメニューにおいて選択肢のグループ分けができるようになる。
         <!--optgroup-->
@@ -62,7 +80,7 @@
       </figure>
     </ul>
 
-    <ul class="main">
+    <ul class="box main" id="box2">
       <li class="headline">accesskeyの使い方</li>
         alt + 設定したaccesskeyでリンク先に移動することができる。なおブラウザや使用環境によって異なり、Macやfirefoxはalt + shift + accesskeyとなっている。<br>
         <!--accesskey-->
@@ -78,7 +96,7 @@
       </figure>
     </ul>
 
-    <ul class="main">
+    <ul class="box main" id="box3">
       <li class="headline">wbrの使い方</li>
         改行可能であることを示すし、主に英語のアルファベットのみで書かれた文章で用い、適度に文章を改行する。<br>
         <!--wbr-->
@@ -93,7 +111,7 @@
       </figure>
     </ul>
 
-    <ul class="main">
+    <ul class="box main" id="box4">
       <li class="headline">rubyの使い方</li>
         漢字の読み仮名を振ってたりする際に使用する。ルビを振るから来ている。なおfirefoxでしか対応しておらず工夫が必要である<br>
         <!--wbr-->
@@ -133,7 +151,7 @@
       </figure>
     </ul>
 
-    <ul class="main">  参考サイト：<a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html" target="_blank" rel="noopener noreferrer">https://html.spec.whatwg.org/multipage/text-level-semantics.html</a></ul>
+    <ul class="box main">  参考サイト：<a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html" target="_blank" rel="noopener noreferrer">https://html.spec.whatwg.org/multipage/text-level-semantics.html</a></ul>
     <footer><p class="plofile_text">5421077 吉田捷馬 <br>日本大学文理学部情報科学科 Webプログラミングの演習課題</p>
       <p>Copyright(C)2022 Shoma Yoshida</p>
       当サイト内は大学内の教員,生徒のみの閲覧を許可し、著作権法第35条に同意したとみなします。<br>
