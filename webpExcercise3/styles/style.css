@@ -1,35 +1,27 @@
 html {
   font-size: 15px;
   font-family: 'YuGothic', sans-serif;
+  scroll-behavior: smooth;/*smooth scrool*/
 }
-
-h1 {
-  font-size: 60px;
-}
-
+h1 {font-size: 60px;}
 p, li {
   font-size: 16px;
   line-height: 2;
   letter-spacing: 1px;
 }
-
-html {
-  background-color: #FF74B1;
-}
+html {background-color: #FF74B1;}
 body{
   width: 1200px;
   margin: 0 auto;
 }
-
-.title{
-  background-color: #C798F0;
+.box{
   padding: 0 20px 20px 20px;
   border: 5px solid black;
 }
-.main{
-  background-color: white;
-  padding: 0 20px 20px 20px;
-  border: 5px solid black;
+.title{background-color: #C798F0;}
+.main{background-color: white;}
+#head{
+  background-color: #DFF6FF;
 }
 .headline{
   color:#083AA9;
@@ -48,29 +40,17 @@ img {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 768px){
-  body {
-    width: 100%;
-  }
-}
-
 footer .plofile_text{
   color:#36E72E;
   text-shadow: 2px 2px 1px black;
   font-weight: bold;
 }
 footer {
-  width: 100%;
   text-align: center;
   padding: 50px 0;
   background-color: #FFF7E9;
   border: 5px solid black;
 }
-.footer-text {
-  color: #fff;
-}
-
-
 figure.sc {
   margin: 0px 0%;
 }
@@ -80,4 +60,141 @@ figure.sc pre {
   font-size: 1rem;
   padding: 0%;
   overflow-x: scroll;
+}
+
+/* header */
+#head.inner {
+  position: relative;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+/* .logo */
+#head .logo {
+  position: relative;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+}
+#head .logo a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+/* scroll */
+#head {
+  transition: height 0.4s cubic-bezier(0.34, 0.615, 0.4, 0.985);
+}
+#head.scroll {
+  height: 60px;
+  position: fixed;
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#head .logo {
+  transition: width 0.4s cubic-bezier(0.34, 0.615, 0.4, 0.985);
+}
+#head.scroll .logo {
+  width: 70px;
+}
+
+/* header-navi-box */
+#head .navi {
+  margin: 0 0 0 auto;
+  padding: 0;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  list-style: none;
+  margin: auto;
+}
+#head .navi li {
+  margin: 5px 0 5px 40px;
+}
+#head .navi li:first-child {
+  margin-left: 0;
+}
+#head .navi li a {
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #905E96;
+}
+#head .navi li a:hover {
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px){
+  body {
+    width: 100%;
+  }
+  #head .logo {
+    padding: 0;
+  }
+  #head .logo a {
+  }
+  .pc_dis{
+    display:none;
+  }
+}
+@media screen and (min-width: 768px){
+	.mb_dis{
+		display:none;
+	}
+}
+
+/* トップへ戻るボタン */
+#page_top{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: #ef3f40;
+  opacity: 0.6;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f0d8';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+
+/*スクロール*/
+.scrollgress{
+	z-index: 3;
+	top:0px!important;
+}
+/*スクロールcolor*/
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+body::-webkit-scrollbar-track {
+	background: linear-gradient(#CEF6F5, #0B0B61);
+}
+body::-webkit-scrollbar-thumb {
+  background: #DFF6FF;
+  border-radius:10px;
 }
