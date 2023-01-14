@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width">
+  <title>PROJECT</title>
+  <meta name="description" content="単語暗記帳を作成できます。自由に単語を登録して勉強に役立ててください">
+
+  <meta name="author" content="myrtilles">
+  <meta property="og:title" content="PROJECT">
+  <meta property="og:description" content="オリジナルの単語暗記帳を作成できるサイトです">
+  <meta property="og:site_name" content="PROJECT">
+  <meta property="og:url" content="ページのURL">
+  <meta property="og:image" content="絶対パス">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:type" content="website">
+  <meta property="fb:app_id" content="App-ID">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" type="../image/png" href="img/icon.jpg">
+  <link rel="apple-touch-icon" href="../img/icon.jpg" sizes="180x180">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src='../js/garlic.js' defer></script>
+  <script src="../js/script.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" media="all" href="../css/style.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" media="all" href="style.css" media="print" onload="this.media='all'">
+
+  <!--<script src="js/jquery.js"></script>-->
+</head>
+<div id="loading">
+  <div class="sk-cube-grid">
+    <div class="sk-cube sk-cube1"></div>
+    <div class="sk-cube sk-cube2"></div>
+    <div class="sk-cube sk-cube3"></div>
+    <div class="sk-cube sk-cube4"></div>
+    <div class="sk-cube sk-cube5"></div>
+    <div class="sk-cube sk-cube6"></div>
+    <div class="sk-cube sk-cube7"></div>
+    <div class="sk-cube sk-cube8"></div>
+    <div class="sk-cube sk-cube9"></div>
+  </div>
+</div>
+<body oncontextmenu="return false;"id="background_img"><!--change_background-->
+<div id="container">
+  <section id="stage1" class="stageBase">
+
+<!--<h1 class="logo"><a href="index.php"><img src="img/logo.png"></a></h1>-->
+<h1 class="logo_font_top">MYRTILLES</h1>
+<div class="popup_wrapper">
+  <input id="popup_open" type="checkbox"/><label for="popup_open" class="logo_font_top_under">CONTACT</label>
+  <div for="popup_open" class="overlay"></div><!--labelにすると背景クリック閉じ-->
+  <div class="popup_content">
+      <label for="popup_open" class="popup_close_btn"><i class="fa_times_batsu fa_times_circle"></i></label>
+      <section class="bgcolor3">
+        <div class="container">
+          <h2 id="contact" class="tdm">CONTACT</h2>
+          <p class="center tdm">お問い合わせできるよ</p>
+          <form method="post" action="../mail.php" class="mailform">
+            <input type="text" name="name" class="input1" placeholder="お名前(ペンネーム)">
+            <input type="mail" name="address" class="input1" placeholder="メールアドレス">
+            <label><input type="radio" name="why[]" value="お問い合わせ">お問い合わせ</label>
+            <label><input type="radio" name="why[]" value="バグ報告">バグ報告</label>
+            <label><input type="radio" name="why[]" value="要望">要望</label>
+            <textarea rows="5" name="message" placeholder="本文"></textarea>
+            <input type="submit" value="Send">
+          </form>
+        </div>
+      </section>
+  </div>
+</div>
+
+<section id="top_header_main">
+  <!--settings, en_word_slider-->
+  <!--<div id="top_left_column">
+    <button class="">home</button>
+  </div>-->
+  <!--en_word_slider-->
+
+<div class="main_column"><div id="main_column_in">
+  <div id="top_left_column">
+    <a href="../">back to home</a>
+  </div>
+  <div class="tytle">How to use this website</div><div class="tytle_sub">サイトの使い方</div>
+    当サービスを利用した場合、"<a href="../privacy">プライバシーポリシー</a>"、"<a href="../about_this_website">ウェブサイトについて</a>"に同意したものとみなします。
+  <br>当サイトはいつでもどこでもだれでも、英単語が覚えられるようにと開発された英単語帳アプリです。
+  <br><br>紙の単語帳のように、覚えたい英単語とその意味を登録してランダムにテストすることができます。
+  <br>スマートフォン、PCのどちらにも対応していますので、英単語の勉強に活用してください。
+
+<div class="sub_tytle">英単語テストについて</div>
+英単語のテストはエビングハウスの忘却曲線に基づいて出題しています。例えば当日と2日前のもの、7日前のものからランダムに出題するようになります。すべてからの出題も可能。
+<br>音声が再生されたり、自動テスト実行ボタンもあるのでご活用ください。
+<br>過去全ての英単語を見たい場合には"ALL"ボタンを押してください。
+<br>
+
+<div class="sub_tytle">英単語の登録・編集について</div>
+英単語、意味、メモ、登録した日付の4つを保存することができ、日付を除き、テストを行う際に表示されます。
+<br>また、登録した英単語は編集、削除、そしてキーワード検索を行った後に単語の編集、削除を行うことができます。
+<br>なお、日付は英単語テストを出題する際に使用します。詳しくは英単語テストについてを伽藍ください。
+<br>キーワード検索は重複する物がある場合、右側の矢印で次に進むことができます。!マークにカーソルを合わせると詳細が表示されます。
+
+<div class="sub_tytle">教育モード</div>
+現在調整中ですが、一部の機能をご利用いただけます。勝手に単語の削除をできないようにパスワードを設ける機能です。
+<br>今後は文字をひらがなにするなど、お子様でも簡単に操作できるような工夫をする予定です。
+<br>初めてご使用される際は、教育モードボタンを押した後に、任意のパスワードを設定してください。
+  <br>なお、設定したパスワードに関しては外部からはアクセスできませんが、端末内では確認することができます。ご了承ください。
+  <br>(お使いのPCやスマートフォンを第三者が操作できる場合は、見ようと思えばパスワードを見ることができます)
+  <br>
+
+<div class="sub_tytle">昨日忘れた、何日戻る、日付指定ボタンについて</div>
+英単語のテストはエビングハウスの忘却曲線に基づいて出題しています。
+
+<div class="sub_tytle">色覚障害の方へ</div>
+左上にある歯車マークを押すと、色補正のボタンがあります。多少文字が見えやすくなります。
+<br>また、シンプルモードもあるので、使いやすいほうでご活用ください。
+
+<div class="sub_tytle">Q&A</div>
+  <div class="accordion_container">
+    <dl class="accordion_list">
+      <dt class="accordion_title js_accordion_title">パスワードを忘れた</dt>
+      <dd class="accordion_text"><p>ローカルストレージの削除行ってください。なお、お使いのブラウザにより操作が異なるため、方法は割愛させていただきます。
+      <br>どうしても分からない場合はお問い合わせください。</p></dd>
+    </dl>
+    <dl class="accordion_list">
+      <dt class="accordion_title js_accordion_title">タイトル1タイトル1</dt>
+      <dd class="accordion_text"><p>テキスト1テキスト1テキスト1テキスト1</p></dd>
+    </dl>
+    <dl class="accordion_list">
+      <dt class="accordion_title js_accordion_title">タイトル1タイトル1</dt>
+      <dd class="accordion_text"><p>テキスト1テキスト1テキスト1テキスト1</p></dd>
+    </dl></div>
+
+  <img id="twitter_img" src="../img/twitter2.png"　></img>
+
+
+</div></div></div>
+</div>
+
+</section>
+</div>
+</body>
+</html>

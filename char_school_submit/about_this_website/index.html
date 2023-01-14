@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width">
+  <title>PROJECT</title>
+  <meta name="description" content="単語暗記帳を作成できます。自由に単語を登録して勉強に役立ててください">
+
+  <meta name="author" content="myrtilles">
+  <meta property="og:title" content="PROJECT">
+  <meta property="og:description" content="オリジナルの単語暗記帳を作成できるサイトです">
+  <meta property="og:site_name" content="PROJECT">
+  <meta property="og:url" content="ページのURL">
+  <meta property="og:image" content="絶対パス">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:type" content="website">
+  <meta property="fb:app_id" content="App-ID">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" type="../image/png" href="img/icon.jpg">
+  <link rel="apple-touch-icon" href="../img/icon.jpg" sizes="180x180">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src='../js/garlic.js' defer></script>
+  <script src="../js/script.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" media="all" href="../css/style.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" media="all" href="style.css" media="print" onload="this.media='all'">
+
+  <!--<script src="js/jquery.js"></script>-->
+</head>
+<div id="loading">
+  <div class="sk-cube-grid">
+    <div class="sk-cube sk-cube1"></div>
+    <div class="sk-cube sk-cube2"></div>
+    <div class="sk-cube sk-cube3"></div>
+    <div class="sk-cube sk-cube4"></div>
+    <div class="sk-cube sk-cube5"></div>
+    <div class="sk-cube sk-cube6"></div>
+    <div class="sk-cube sk-cube7"></div>
+    <div class="sk-cube sk-cube8"></div>
+    <div class="sk-cube sk-cube9"></div>
+  </div>
+</div>
+<body oncontextmenu="return false;"id="background_img"><!--change_background-->
+<div id="container">
+  <section id="stage1" class="stageBase">
+
+<!--<h1 class="logo"><a href="index.php"><img src="img/logo.png"></a></h1>-->
+<h1 class="logo_font_top">MYRTILLES</h1>
+<div class="popup_wrapper">
+  <input id="popup_open" type="checkbox"/><label for="popup_open" class="logo_font_top_under">CONTACT</label>
+  <div for="popup_open" class="overlay"></div><!--labelにすると背景クリック閉じ-->
+  <div class="popup_content">
+      <label for="popup_open" class="popup_close_btn"><i class="fa_times_batsu fa_times_circle"></i></label>
+      <section class="bgcolor3">
+        <div class="container">
+          <h2 id="contact" class="tdm">CONTACT</h2>
+          <p class="center tdm">お問い合わせできるよ</p>
+          <form method="post" action="../mail.php" class="mailform">
+            <input type="text" name="name" class="input1" placeholder="お名前(ペンネーム)">
+            <input type="mail" name="address" class="input1" placeholder="メールアドレス">
+            <label><input type="radio" name="why[]" value="お問い合わせ">お問い合わせ</label>
+            <label><input type="radio" name="why[]" value="バグ報告">バグ報告</label>
+            <label><input type="radio" name="why[]" value="要望">要望</label>
+            <textarea rows="5" name="message" placeholder="本文"></textarea>
+            <input type="submit" value="Send">
+          </form>
+        </div>
+      </section>
+  </div>
+</div>
+
+<section id="top_header_main">
+  <!--settings, en_word_slider-->
+  <!--<div id="top_left_column">
+    <button class="">home</button>
+  </div>-->
+  <!--en_word_slider-->
+
+<div class="main_column">
+  <div id="top_left_column">
+    <a href="../">back to home</a>
+  </div>
+  <div class="tytle">about this website</div><div class="tytle_sub">サイトについて</div>
+    当サービスをご利用するにあたり、以下の記述事項をお読み頂き、これらの条件にご同意の上ご利用ください。
+    なお、当サイトのコード等の技術を複製することは禁止しています。
+    <br>
+  <div class="sub_tytle">リンクについて</div>
+  当サイトへのリンクは基本的に自由です。なお、以下のリンクは禁止します。
+  <br>1.当サイトの誹謗中傷または信用毀損を意図するサイトからのリンク
+  <br>2.違法もしくは違法の可能性があるコンテンツを含むサイトからのリンク
+  <div class="sub_tytle">免責事項</div>
+  当ブログからのリンクやバナーなどで移動したサイトで提供される情報、サービス等について一切の責任を負いません。
+  また、当ブログのコンテンツ・情報について、できる限り正確な情報を提供するように努めておりますが、正確性や安全性を保証するものではありません。情報が古くなっていることもございます。
+  当サイトに掲載された内容によって生じた損害等の一切の責任を負いかねますのでご了承ください。
+  <br>
+  <img id="twitter_img" src="../img/twitter2.png"　></img>
+
+
+</div></div>
+</div>
+
+</section>
+</div>
+</body>
+</html>
