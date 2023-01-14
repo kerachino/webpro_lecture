@@ -1,4 +1,4 @@
-let absolute_path = 'http://myrtilles.starfree.jp/char_school_submit/';
+let absolute_path = 'https://jade-lebkuchen-54eeab.netlify.app';
 var n=999;
 var edit_check=-1;
 var header_selected=0;
