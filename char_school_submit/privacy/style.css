@@ -1,0 +1,85 @@
+footer {
+  position: relative;
+  text-align: center;
+  background-color: #C798F0;
+  border: 5px solid black;
+}
+
+.main_column{
+  position: relative;
+  text-align: center;
+  background-color: #fff;
+  border: 8px solid black;
+}
+.main_column .topic{
+  position: relative;
+  line-height: 1.5;
+  text-align: center;
+  margin: 50px auto;
+  max-width:600px;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .main_column .topic{width:98%;}
+}
+.main_column .tytle{
+  position: relative;
+  margin:30px 30% 0 0;
+  font-size: 35px;
+  font-weight: bold;
+}
+.main_column .tytle_sub{
+  position: relative;
+  margin:0 30% 40px 0;
+  top:-10px;
+  font-size: 12px;
+}
+.main_column .sub_tytle{
+  position: relative;
+  text-align: left;
+  /*margin:100px 0 20px 30px;*/
+  margin:100px 0 20px 0px;
+  left:40px;
+  width:90%;
+  font-weight: bold;
+  font-size: 25px;
+}
+.main_column .text{
+  text-align: left;
+}
+
+#top_left_column{
+  position: relative;
+  text-align: left;
+  left: 30px;
+  top:10px;
+  width:90%;
+}
+
+#top_left_column a{
+  position: relative;
+  color:#000;
+  padding: 2px 20px;
+  border: 1px solid black;
+  transition: color 0.3s;
+}
+#top_left_column a:hover{
+  color : #ff7043;
+}
+#top_left_column a:active{
+  color : #ff7043;
+}
+#top_left_column a::before {
+  content: "";
+  width: 60px;
+  border-top: solid 1px;
+  position: absolute;
+  left: -65px;
+  top: 50%;
+}
+.main_column #twitter_img{
+  position: absolute;
+  width: 30px;
+  right: 10px;
+  bottom: 0px;
+}
