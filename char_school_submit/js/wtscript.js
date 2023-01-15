@@ -223,6 +223,11 @@ function change_background_selects(){
 			document.getElementById('background_img').style.cssText = 'background-image: url('+ absolute_path +'img/bg'+ i +'.webp)';
 		}
 	}
+	for(var i=100;i< 106 ; i++){//管理上
+		if(document.getElementById('change_background_select').value == i){
+			document.getElementById('background_img').style.cssText = 'background-image: url('+ absolute_path +'img/bg'+ i +'.webp)';
+		}
+	}
 }
 
 function lung_change(){
