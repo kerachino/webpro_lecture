@@ -3098,13 +3098,13 @@ footer {
   transform: translateY(-50%);
   width: 2.6rem;
   padding: 0.2rem 0rem;
-  background-color: #7B35F7;
+  background-color: #6CD892;
   text-align: center;
   content: 'ON';
   transition: .5s;
 }
 .switch_checkbox2 input[type=checkbox]:checked::before {
-  background-color: #6CD892;
+  background-color: #B75454;
   left: 1.6rem;
   content: 'OFF';
   transition: .5s;
