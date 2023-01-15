@@ -1,4 +1,4 @@
-let absolute_path = 'https://jade-lebkuchen-54eeab.netlify.app/';
+let absolute_path = 'https://entango.netlify.app/';
 var n=999;
 var edit_check=-1;
 var header_selected=0;
