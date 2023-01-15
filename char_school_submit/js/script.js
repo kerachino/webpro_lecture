@@ -245,12 +245,19 @@ function OutputImage(target){
         // 4. Imageクラスを使ってdiv要素に画像のheightとwidthのサイズを設定
         img = new Image();
         img.src = this.result;
-        img.onload = function() {
+        /*img.onload = function() {
             $sample2.css("width", img.naturalWidth);
             $sample2.css("height", img.naturalHeight);
-        }
+        }*/
         // 5. backgroundスタイルを設定
-        $sample2.css("background", "url(" + this.result + ") center center / contain no-repeat");
+        //$sample2.css("background", "url(" + this.result + ") center center / contain no-repeat");
+        var target=document.getElementById('background_img');
+
+        var random = Math.floor( Math.random() * 2 );//0~2
+        target.style.background="url(" + this.result + ")";
+        target.style.backgroundSize="100%";
+        if(random==0)
+          target.style.backgroundRepeat="no-repeat";
     }
     // 6. 読み込んだ画像ファイルをURLに変換
     reader.readAsDataURL(target.files[0]);
@@ -268,7 +275,6 @@ window.onload = function() {
   speak_font_delete();
   when_check();
   lung_change();
-  change_background_selects();
   loop_wrap();
   if(document.getElementById('color_correction_btn').checked){
     document.getElementById('dark_bottom_boxes').checked = false;
