@@ -69,6 +69,7 @@ document.addEventListener('click', function (ev) {
 $('html').delay(500).queue(function(){
   document.getElementById('word_header1_select').click();
   change_background_selects();
+  loop_wrap();
 //$(function () {
   /*header
   speak_font_delete();
