@@ -264,7 +264,6 @@ function OutputImage(target){
 }
 
 window.onload = function() {
-  document.getElementById('word_header1_select').click();
   const spinner = document.getElementById('loading');
   // Add .loaded to .loading
   spinner.classList.add('loaded');
@@ -275,7 +274,6 @@ window.onload = function() {
   speak_font_delete();
   when_check();
   lung_change();
-  loop_wrap();
   if(document.getElementById('color_correction_btn').checked){
     document.getElementById('dark_bottom_boxes').checked = false;
   }
