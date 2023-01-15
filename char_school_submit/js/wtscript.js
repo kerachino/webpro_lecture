@@ -296,6 +296,7 @@ function word_change2_run(){
 	q_counter=-1;
 	word_change2();
 	jQdm_flexGrid();
+	loop_wrap();
 }
 function word_change1_run(){
 	header_selected=1;
@@ -331,6 +332,7 @@ function word_change1_run(){
 	q_counter=-1;
 	word_change1();
 	jQdm_flexGrid();
+	loop_wrap();
 }
 
 //勉強用(後で関数にして)
