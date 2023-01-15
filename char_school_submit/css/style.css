@@ -1709,6 +1709,11 @@ p {
   font-weight: 400;
   font-size: 3em;
   text-align: center;
+  color: #000;
+  text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+              -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+              0px 1px 0 #FFF,  0-1px 0 #FFF,
+              -1px 0 0 #FFF, 1px 0 0 #FFF;
 }
 .logo_font_top_under {
   line-height: 10px;
