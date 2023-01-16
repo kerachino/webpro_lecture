@@ -74,6 +74,7 @@ $('html').delay(500).queue(function(){
     document.getElementById('dark_bottom_boxes').checked = true;
   }
   dark_mode();
+  when_check();
   color_correction();
   if(words[0][0]==''){
     document.getElementById('alert_und').innerHTML = '正常に動作しない場合はページのリロードをお願いします。(単語登録でこのメッセージは非表示になります)';
