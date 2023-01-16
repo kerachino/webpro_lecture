@@ -573,7 +573,7 @@ function word_change2(){
 							document.getElementById('en').value = '';
 							document.getElementById('ja').value = '';
 							document.getElementById('ex').value = '';
-							document.getElementById('en_day').value = '';
+							document.getElementById('en_day').value = new Date().getFullYear() +'/'+ new Date().getMonth()+1 +'/'+ new Date().getDate().toString().padStart(2, "0");
 							edit_check=-1;
 						}
 					});
