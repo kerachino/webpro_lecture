@@ -193,6 +193,9 @@ document.addEventListener('change', function (ev) {
 				document.getElementsByClassName('acbox_inside')[i].style.cssText = 'background-color:'+ document.getElementById('grid_container_bg_color').value;
 			}
 		}
+		if(el.matches('#en')){
+			document.getElementById('en_day').value = new Date().getFullYear() +'/'+ new Date().getMonth()+1 +'/'+ new Date().getDate().toString().padStart(2, "0");
+		}
 });
 
 function dark_mode(){
@@ -271,8 +274,8 @@ function word_change2_run(){
 	target11.style.display = '';
 	target12.style.display = 'none';
 	if(document.getElementById('color_correction_btn').checked){
-		target1.style.backgroundImage = 'linear-gradient(60deg, #14D658 10%, #2A90EA 50%, #14D6CA 100%)';
-		target1.style.color = '#fff';
+		target1.style.backgroundImage = 'linear-gradient(60deg, #FC459B 10%, #fff 50%, #fff 100%)';
+		target1.style.color = '#000';
 		target2.style.backgroundImage = '';
 		target2.style.color = '';
 	}else{
@@ -317,8 +320,9 @@ function word_change1_run(){
 	if(document.getElementById('color_correction_btn').checked){
 		target1.style.backgroundImage = '';
 		target1.style.color = '';
-		target2.style.backgroundImage = 'linear-gradient(60deg, #14D658 10%, #2A90EA 50%, #14D6CA 100%)';
-		target2.style.color = '#fff';
+		target2.style.backgroundImage = 'linear-gradient(60deg, #FC459B 10%, #fff 50%, #fff 100%)';
+		//target2.style.backgroundImage = 'linear-gradient(60deg, #14D658 10%, #2A90EA 50%, #14D6CA 100%)';
+		target2.style.color = '#000';
 	}else{
 		target1.style.backgroundImage = 'linear-gradient(60deg, #FFF 10%, #FFF 50%, #D6D6D6 100%)';
 		target1.style.color = '#000';
@@ -511,10 +515,11 @@ function word_change1(){
 
 function word_change2(){
 	counter_view();
+	let now_data_base = new Date().getFullYear() +'/'+ new Date().getMonth()+1 +'/'+ new Date().getDate().toString().padStart(2, "0");
   const en=document.getElementById('en');
 	const ja=document.getElementById('ja');
 	const ex=document.getElementById('ex');
-	document.getElementById('en_day').value = new Date().getFullYear() +'/'+ new Date().getMonth()+1 +'/'+ new Date().getDate().toString().padStart(2, "0");
+	document.getElementById('en_day').value = now_data_base;
 	const day = document.getElementById('en_day');
 	const btn=document.getElementById('btn');
 	const total=document.getElementById('total');
@@ -573,7 +578,7 @@ function word_change2(){
 							document.getElementById('en').value = '';
 							document.getElementById('ja').value = '';
 							document.getElementById('ex').value = '';
-							document.getElementById('en_day').value = new Date().getFullYear() +'/'+ new Date().getMonth()+1 +'/'+ new Date().getDate().toString().padStart(2, "0");
+							document.getElementById('en_day').value = now_data_base;
 							edit_check=-1;
 						}
 					});
@@ -647,10 +652,9 @@ function word_change2(){
 		if(1900 < new Date(day.value).getFullYear()){
 			let color=new Color(en.value,ja.value,ex.value,day.value);
 			colors.push(color);
-			createTable();
 			localStorage.setItem("colors",JSON.stringify(colors));
+			createTable();
 			loop_wrap();
-			document.getElementById('en_day').value = new Date().getFullYear() +'/'+ new Date().getMonth()+1 +'/'+ new Date().getDate().toString().padStart(2, "0");
 			en.value='';
 			ja.value='';
 			ex.value='';
