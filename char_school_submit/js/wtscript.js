@@ -640,7 +640,6 @@ function word_change2(){
 		rand = Math.floor( Math.random() * ( i + 1 ) );
 		[array[i], array[rand]] = [array[rand], array[i]];
 	}
-
 	btn.addEventListener('click',()=>{
 		//var day_show_text = new Date(day.value).getFullYear() * 10000 + new Date(day.value).getMonth()+1 * 100 + new Date(day.value).getDate();
 		/*var day_show_text = new Date(day.value).getFullYear() +'/'+ new Date(day.value).getMonth()+1 +'/'+ new Date(day.value).getDate();
@@ -649,14 +648,14 @@ function word_change2(){
 		if(1900 < new Date(day.value).getFullYear()){
 			let color=new Color(en.value,ja.value,ex.value,day.value);
 			colors.push(color);
-			en.value='';
-			ja.value='';
-			ex.value='';
-			day.value='';
 			createTable();
 			localStorage.setItem("colors",JSON.stringify(colors));
 			loop_wrap();
 			document.getElementById('en_day').value = new Date().getFullYear() +'/'+ new Date().getMonth()+1 +'/'+ new Date().getDate().toString().padStart(2, "0");
+			en.value='';
+			ja.value='';
+			ex.value='';
+			day.value='';
 		}
 	});
 	document.getElementById('sort_date').addEventListener('click',()=>{
