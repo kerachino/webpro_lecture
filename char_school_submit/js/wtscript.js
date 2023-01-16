@@ -554,15 +554,15 @@ function word_change2(){
 						edit_check = i;
 						document.getElementById('complite_edit_btn').style.cssText = 'display:block';
 						document.getElementById('btn').style.cssText = 'display:none;';
-						document.getElementById('complite_edit_cancel_btn').style.cssText = 'display:block;';
+						document.getElementById('complite_edit_cancel_btn').style.cssText = 'display:block;';alert("a");
 						jQdm_flexGrid();
 					});
 					document.getElementById('complite_edit_btn').addEventListener('click',()=>{
 						if(edit_check==i){
-							colors[i].en=document.getElementById('en').value;
-							colors[i].ja=document.getElementById('ja').value;
-							colors[i].ex=document.getElementById('ex').value;
-							colors[i].day=document.getElementById('en_day').value;
+							this.en=document.getElementById('en').value;
+							this.ja=document.getElementById('ja').value;
+							this.ex=document.getElementById('ex').value;
+							this.day=document.getElementById('en_day').value;
 							//alert(colors[i].en);check
 							createTable();
 							localStorage.setItem("colors", JSON.stringify(colors));/*save changed*/
