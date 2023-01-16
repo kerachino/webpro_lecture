@@ -201,10 +201,12 @@ function when_check(){
   var i=0;
   while(i < document.querySelectorAll('.confirm_btn[type="checkbox"]').length){
     if(document.querySelectorAll('.confirm_btn')[i].checked){
-       document.querySelectorAll('.acbox_switch')[i].style.cssText = 'background:#669036;';
+      // document.querySelectorAll('.acbox_switch')[i].style.cssText = 'background:#669036;';
+       document.querySelectorAll('.grid_container .column')[i].style.width = '100%';
      }else{
-       document.querySelectorAll('.acbox_switch')[i].style.cssText = '';
+       document.querySelectorAll('.grid_container .column')[i].style.width = '';
      }
      i++;
    }
+   jQdm_flexGrid();
 }
