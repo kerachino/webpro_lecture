@@ -208,11 +208,11 @@ function del_bottom_boxes_checked() {
   var target2 = document.getElementById('san_boxes');
   var target3 = document.getElementsByClassName('loop_wrap')[0];
   if(target.checked) {
-    target2.style.cssText = '';
-    target3.style.cssText = '';
+    //target2.style.cssText = '';
+    target3.style.display = '';
   }else{
-    target2.style.cssText = 'display:none;';
-    target3.style.cssText = 'top:160px;';
+    //target2.style.cssText = 'display:none';
+    target3.style.display = 'none';
   }
 }
 
