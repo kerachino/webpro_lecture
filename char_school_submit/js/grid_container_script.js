@@ -69,17 +69,18 @@ document.addEventListener('click', function (ev) {
 $('html').delay(500).queue(function(){
   document.getElementById('word_header1_select').click();
   change_background_selects();
-  loop_wrap();
   if(document.getElementById('color_correction_btn').checked==false){
     document.getElementById('dark_bottom_boxes').checked = true;
   }
   dark_mode();
   when_check();
   color_correction();
+  del_bottom_boxes_checked();
   if(words[0][0]==''){
     document.getElementById('alert_und').innerHTML = '正常に動作しない場合はページのリロードをお願いします。(単語登録でこのメッセージは非表示になります)';
   }
   jQdm_flexGrid();
+  document.getElementById('word_header1_select').click();
 //$(function () {
   /*header
   speak_font_delete();
