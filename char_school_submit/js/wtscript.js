@@ -554,7 +554,7 @@ function word_change2(){
 						edit_check = i;
 						document.getElementById('complite_edit_btn').style.cssText = 'display:block';
 						document.getElementById('btn').style.cssText = 'display:none;';
-						document.getElementById('complite_edit_cancel_btn').style.cssText = 'display:block;';alert("a");
+						document.getElementById('complite_edit_cancel_btn').style.cssText = 'display:block;';
 						jQdm_flexGrid();
 					});
 					document.getElementById('complite_edit_btn').addEventListener('click',()=>{
