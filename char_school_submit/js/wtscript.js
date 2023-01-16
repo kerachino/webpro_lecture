@@ -559,7 +559,6 @@ function word_change2(){
 					});
 					document.getElementById('complite_edit_btn').addEventListener('click',()=>{
 						if(edit_check==i){
-							edit_check=-1;
 							colors[i].en=document.getElementById('en').value;
 							colors[i].ja=document.getElementById('ja').value;
 							colors[i].ex=document.getElementById('ex').value;
@@ -567,7 +566,6 @@ function word_change2(){
 							//alert(colors[i].en);check
 							createTable();
 							localStorage.setItem("colors", JSON.stringify(colors));/*save changed*/
-
 							/*do after change*/
 							document.getElementById('complite_edit_btn').style.cssText = '';
 							document.getElementById('complite_edit_cancel_btn').style.cssText = '';
@@ -576,6 +574,7 @@ function word_change2(){
 							document.getElementById('ja').value = '';
 							document.getElementById('ex').value = '';
 							document.getElementById('en_day').value = '';
+							edit_check=-1;
 						}
 					});
 	        return temp.content.children;
