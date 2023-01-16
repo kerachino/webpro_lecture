@@ -272,7 +272,6 @@ window.onload = function() {
     education_mode_show();
   }
   speak_font_delete();
-  when_check();
   lung_change();
   counter();
   del_char_checked();
