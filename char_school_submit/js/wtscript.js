@@ -355,15 +355,25 @@ const generateRandomString = (num) => {
 document.addEventListener('click', function (ev) {
 	var el = ev.target;
   if (el.matches('#word_header1_select') || el.matches('#all_word_show')) {
-		for(var i = 0; i<words[0].length; i++){//初期化
-			array[i] = i;
+		if(header_selected != 2){
+			for(var i = 0; i<words[0].length; i++){//初期化
+				array[i] = i;
+			}
+			word_change2_run();
+		}else{//
+			loop_wrap();
+			jQdm_flexGrid();
 		}
-		word_change2_run();
 	}else if (el.matches('#word_header2_select') || el.matches('#all_word_show2')) {
-		for(var i = 0; i<words[0].length; i++){
-			array[i] = i;
+		if(header_selected != 1){
+			for(var i = 0; i<words[0].length; i++){
+				array[i] = i;
+			}
+			word_change1_run();
+		}else{//
+			loop_wrap();
+			jQdm_flexGrid();
 		}
-		word_change1_run();
 	}
 
 	if(el.matches('#day_reload_btn')){
@@ -438,6 +448,9 @@ document.addEventListener('click', function (ev) {
 				word_search_i = -1;
 				alert("最後です");
 			}
+		jQdm_flexGrid();
+	}
+	if(el.matches('#complite_edit_cancel_btn')){
 		jQdm_flexGrid();
 	}
 }, false);
@@ -572,6 +585,7 @@ function word_change2(){
 							//alert(colors[i].en);check
 							createTable();
 							localStorage.setItem("colors", JSON.stringify(colors));/*save changed*/
+
 							/*do after change*/
 							document.getElementById('complite_edit_btn').style.cssText = '';
 							document.getElementById('complite_edit_cancel_btn').style.cssText = '';
@@ -580,6 +594,8 @@ function word_change2(){
 							document.getElementById('ja').value = '';
 							document.getElementById('ex').value = '';
 							document.getElementById('en_day').value = now_data_base;
+							loop_wrap();
+							jQdm_flexGrid();
 							edit_check=-1;
 						}
 					});
