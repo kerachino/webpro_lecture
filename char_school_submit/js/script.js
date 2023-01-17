@@ -267,10 +267,6 @@ window.onload = function() {
   const spinner = document.getElementById('loading');
   // Add .loaded to .loading
   spinner.classList.add('loaded');
-
-  if(document.getElementById('education_mode_boxes').checked){
-    education_mode_show();
-  }
   speak_font_delete();
   lung_change();
   counter();
