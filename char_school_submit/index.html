@@ -88,6 +88,9 @@
     <input id="popup_open_set" type="checkbox"/><label for="popup_open_set" class="top_logo top_header"><img src="img/set.png"></label>
     <label for="popup_open_set" class="overlay"></label><!--labelにすると背景クリック閉じ-->
     <div class="popup_content_set tdm">
+      <label class="set_btn_label"><input type="checkbox" id="education_mode_boxes" data-persist="garlic" name="education_mode_boxes"/><nobr class="main_jp_show">教育モード</nobr><nobr class="main_en_show">education mode</nobr></label>
+      <section id="education_settings_box">
+
         <label for="popup_open_set" class="popup_close_btn"><i class="fa_times_batsu fa_times_circle"></i></label>
         <label class="set_btn_label" for="change_background_input"><nobr class="main_jp_show">ローカルから背景変更</nobr><nobr class="main_en_show">change background from local</nobr><input type="file" class="change_button_input" id="change_background_input" onchange="OutputImage(this);"/></label><!--change_background-->
         <div class="cp_ipselect cp_sl03" style="display:inline">
@@ -119,19 +122,20 @@
         </div>
 
         <br>
+
         <label class="color_changer"><nobr vlass="color_changer_text"><nobr class="main_jp_show">ボックス背景</nobr><nobr class="main_en_show">box bg color</nobr></nobr><input type="color" id="grid_container_bg_color" name="favorite_color" value="#000"/></label>
         <label class="color_changer"><nobr vlass="color_changer_text"><nobr class="main_jp_show">準備中</nobr><nobr class="main_en_show">box font color</nobr></nobr><input type="color" id="grid_container_font_color" name="favorite_color" value="#000"/></label>
 
 
 
         <br>
-        <label class="set_btn_label"><input type="checkbox" id="education_mode_boxes" data-persist="garlic" name="education_mode_boxes"/><nobr class="main_jp_show">教育モード</nobr><nobr class="main_en_show">education mode</nobr></label>
-        <section id="education_settings_box">
+
           <button class="set_btn" id="change_pass_btn"><nobr class="main_jp_show">パスワード変更</nobr><nobr class="main_en_show">change pass</nobr></button>
           <button class="set_btn" id="del_all_localStorage_data"><nobr class="main_jp_show">単語データを全削除</nobr><nobr class="main_en_show">delete all word data</nobr></button>
           <a id='localStorage_dl_btn' class="set_btn" download='wordtest_backup_data.txt'><nobr class="main_jp_show">単語データを出力</nobr><nobr class="main_en_show">export data</nobr></a>
           <label id="localStorage_input_btn_box" class="set_btn" for="localStorage_input_btn"><nobr class="main_jp_show">単語データを入力</nobr><nobr class="main_en_show">inport data</nobr><input id="localStorage_input_btn" type="file"/></label>
-        </section>
+
+          <br>
         <label class="set_btn_label"><input type="checkbox" id="back_1_date"/><nobr class="main_jp_show">昨日忘れた</nobr><nobr class="main_en_show">back to yesterday</nobr></label>
         <form style="display:inline"><input type="text" style="width:30px;" data-persist="garlic" name="back_date" id="back_date" class="set_btn_input"><nobr class="main_jp_show">日戻る</nobr><nobr class="main_en_show">day back</nobr></form>
         or <nobr class="main_jp_show">日付指定</nobr><nobr class="main_en_show">day</nobr><input type="date" id="calendar_for_back_date" class="set_btn_calendar">
@@ -156,6 +160,8 @@
           <input type="checkbox" checked="" id="color_correction_btn" data-persist="garlic" name="color_correction_btn">
           <label for="color_correction_btn"></label><nobr class="switch_checkbox_font"><nobr class="main_jp_show">色補正(色の変更)</nobr><nobr class="main_en_show">color correction</nobr></nobr>
         </div>
+
+        </section>
     </div>
   </div>
   <!--en_word_slider-->
@@ -263,8 +269,8 @@
           <button id="btn" class="tdm">登録</button>
           <button id="complite_edit_btn" class="tdm">編集</button>
           <button id="complite_edit_cancel_btn" class="tdm">cancel</button>
-          <input type="checkbox" id="all_word_show" class="tdm">all</input>
-          <input type="checkbox" id="sort_date" class="tdm">sort</input>
+          <input type="checkbox" id="all_word_show" class="tdm"><label for="all_word_show">all</label></input>
+          <input type="checkbox" id="sort_date" class="tdm"><label for="sort_date">sort</label></input>
 
           <section class="information_ex">
             <span class="tooltip"><div class="information_img"><img src="img/information.png"/></div>
