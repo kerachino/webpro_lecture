@@ -76,6 +76,10 @@ $('html').delay(500).queue(function(){
   when_check();
   color_correction();
   del_bottom_boxes_checked();
+  if(document.getElementById('education_mode_boxes').checked){
+    education_mode_show();
+  }
+  
   if(words[0][0]==''){
     document.getElementById('alert_und').innerHTML = '正常に動作しない場合はページのリロードをお願いします。(単語登録でこのメッセージは非表示になります)';
   }
