@@ -106,6 +106,7 @@ document.addEventListener('change', function (ev) {
 				education_mode_show();
 			}
 		}else{
+			password=localStorage.getItem('password');
 			let name = prompt('passwordを入力してください');
 			if(password == "\""+name+"\""){
 				alert("正解");
