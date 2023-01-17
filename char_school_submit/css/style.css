@@ -3393,3 +3393,41 @@ footer {
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 12px;
 }
+
+#btn, #complite_edit_btn{
+  background-color: #000;
+  color:#fff;
+}
+#btn:hover, #complite_edit_btn:hover{
+  background-color: #525252;
+  color:#fff
+}
+#day_reload_btn{
+  background-color: #fff;
+  color:#000;
+}
+#day_reload_btn:hover{
+  background-color: #D8D8D8;
+}
+#complite_edit_cancel_btn{
+  background-color: #fff;
+  color:#000;
+}
+#complite_edit_cancel_btn:hover{
+  background-color: #D8D8D8;
+}
+
+.edit_btn{
+  background-color: #D5D9FF;
+  color:#000;
+}
+.edit_btn:hover{
+  background-color: #C1C7FF;
+}
+.del_btn{
+  background-color: #FF5389;
+  color:#fff;
+}
+.del_btn:hover{
+  background-color: #B22954;
+}
