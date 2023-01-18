@@ -3008,7 +3008,7 @@ display:none; /* アップロードボタンのスタイルを無効にする */
 /* 上部表示 */
 .tooltip .tooltiptext-top {
    visibility: hidden;
-   width: 120px;
+   /*width: 120px;*/
    background-color: rgba(0, 0, 0, 0.8);;
    color: #FFF;
    font-weight: bold;
@@ -3020,7 +3020,6 @@ display:none; /* アップロードボタンのスタイルを無効にする */
    bottom: 130%;
    left: 50%;
    margin-left: -60px;
-
 /* text-shadow: -1px -1px 0 #FFF, -1px 0 0 #FFF, -1px 1px 0 #FFF,
                   0 -1px 0 #FFF,                  0 1px 0 #FFF,
                 1px -1px 0 #FFF,  1px 0 0 #FFF,  1px 1px 0 #FFF;*/
@@ -3057,6 +3056,12 @@ footer {
   text-align: center;
   background-color: #C798F0;
   border: 5px solid black;
+}
+
+#filter_box{font-weight: bold;}
+.table_filter .tooltip .tooltiptext{width:49vw;}
+@media (max-width: 768px) {
+  .table_filter .tooltip .tooltiptext{width:95vw;}
 }
 
 .switch_checkbox input[type=checkbox] , .switch_checkbox2 input[type=checkbox]{
@@ -3361,7 +3366,7 @@ footer {
 
 .word_header_item{
   background: #1462ff;
-  color: white;
+  color: #000;
   border-radius: 12px;
   padding: 12px 48px;
   box-shadow: 0 6px 30px -10px #4a74c9;
@@ -3375,7 +3380,7 @@ footer {
   box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
   transform: scale(0.930);
 }
-
+#word_header1_select{color: #000}
 .word_header_item{
   background-image: linear-gradient(60deg, #FC459B 10%, #122768 50%, #401268 100%);
   /*background-image: linear-gradient(60deg, #FC459B 10%, #122768 50%, #401268 100%);*/
