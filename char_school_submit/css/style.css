@@ -3037,6 +3037,19 @@ display:none; /* アップロードボタンのスタイルを無効にする */
 .tooltip:hover .tooltiptext-top {
    visibility: visible;
 }
+.tooltip .tooltiptext-right {
+       visibility: hidden;
+       width: 120px;
+       background-color: #111;
+       color: #fff;
+       text-align: center;
+       border-radius: 6px;
+       padding: 5px 0;
+       position: absolute;
+       z-index: 1;
+       top: -5px;
+       left: 110%;
+   }
 .tooltip .tooltiptext-bottom {
    visibility: hidden;
    width: 120px;
@@ -3059,9 +3072,9 @@ footer {
 }
 
 #filter_box{font-weight: bold;}
-.table_filter .tooltip .tooltiptext{width:49vw;}
+.table_filter .tooltip .tooltiptext{width:35vw;}
 @media (max-width: 768px) {
-  .table_filter .tooltip .tooltiptext{width:95vw;}
+  .table_filter .tooltip .tooltiptext{width:65vw;}
 }
 
 .switch_checkbox input[type=checkbox] , .switch_checkbox2 input[type=checkbox]{
