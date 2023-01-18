@@ -79,7 +79,7 @@ $confirmDsp = 0;
 $jumpPage = 0;
 
 // 送信完了後に表示するページURL（上記で1を設定した場合のみ）※httpから始まるURLで指定ください。（相対パスでも基本的には問題ないです）
-$thanksPage = "https://entango.netlify.app";
+$thanksPage = "http://xxx.xxxxxxxxx/thanks.html";
 
 // 必須入力項目を設定する(する=1, しない=0)
 $requireCheck = 0;
@@ -566,7 +566,7 @@ function adminHeader($post_mail,$BccMail){
 	$header.="Content-Type:text/plain;charset=iso-2022-jp\nX-Mailer: PHP/".phpversion();
 	return $header;
 }
-//管理者宛送信メールボディ//受信設定
+//管理者宛送信メールボディ
 function mailToAdmin($arr,$subject,$mailFooterDsp,$mailSignature,$encode,$confirmDsp){
 	$adminBody="「".$subject."」からのメール\n\n";
 	$adminBody .="＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
