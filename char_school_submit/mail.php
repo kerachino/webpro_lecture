@@ -53,7 +53,7 @@ $Referer_check = 1;
 
 //リファラチェックを「する」場合のドメイン ※設置するサイトのドメインを指定して下さい。
 //もしこの設定が間違っている場合は送信テストですぐに気付けます。
-$Referer_check_domain = "http://myrtilles.starfree.jp";
+$Referer_check_domain = "https://entango.netlify.app";
 
 /*セッションによるワンタイムトークン（CSRF対策、及びスパム防止）(する=1, しない=0)
 ※ただし、この機能を使う場合は↓の送信確認画面の表示が必須です。（デフォルトではON（1）になっています）
@@ -79,7 +79,7 @@ $confirmDsp = 0;
 $jumpPage = 0;
 
 // 送信完了後に表示するページURL（上記で1を設定した場合のみ）※httpから始まるURLで指定ください。（相対パスでも基本的には問題ないです）
-$thanksPage = "http://myrtilles.starfree.jp/char_school_submit";
+$thanksPage = "https://entango.netlify.app";
 
 // 必須入力項目を設定する(する=1, しない=0)
 $requireCheck = 0;
