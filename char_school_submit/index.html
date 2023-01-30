@@ -26,7 +26,6 @@
   <script src='js/garlic.js' defer></script>
   <script src="js/wtscript.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/wtscript.js"></script>
   <link rel="stylesheet" media="all" href="css/style.css" media="print" onload="this.media='all'">
   <!--<script src="js/jquery.js"></script>-->
 </head>
@@ -39,7 +38,8 @@
 
   gtag('config', 'G-3J6ZXXG8T1');
 </script>
-
+<a href="#" id="go_top_btn">↑</a>
+<a href="#link2" id="go_under_btn">↓</a>
 <body oncontextmenu="return false;"id="background_img"><!--change_background-->
 <div id="loading">
   <div class="sk-cube-grid">
@@ -61,8 +61,6 @@
 <!--<h1 class="logo"><a href="index.php"><img src="img/logo.png"></a></h1>-->
 <h1 class="logo_font_top">MYRTILLES</h1>
 <div class="popup_wrapper">
-  <div style="background-color:#FFF;">当サイトは近日移転する予定です、準備ができ次第、Twitterや公式サイトでお伝えいたします。
-  <br>すでに当アプリを使用されている方はバックアップをお願いいたします。(22/1/28)</div>
   <input id="popup_open" type="checkbox"/><label for="popup_open" class="logo_font_top_under">CONTACT</label>
   <div for="popup_open" class="overlay"></div><!--labelにすると背景クリック閉じ-->
   <div class="popup_content tdm">
@@ -448,7 +446,7 @@ Did you get along with your old boss? 以前の会社のボスとはうまくや
       </div>
     </div>
 
-  <div class="column footer">
+  <div id="link2" class="column footer">
     <footer>
       <a href="https://twitter.com/shoh_frf" target="_blank"><div class="app_box"><img style="width:100px" class="app_img" src="img/twitter.png"/></div></a>Copyright(C)2023 myrtilles
     </footer>
@@ -520,6 +518,7 @@ for (let i = 1; i <= 12; i++) {
   // 角度をつける
   document.querySelector(".scale div:nth-child(" + i + ")").style.transform = `rotate(${i * 30}deg)`;
 }
+*/
 
 
 /*en_word_slider*/
