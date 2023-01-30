@@ -3449,3 +3449,29 @@ footer {
 .del_btn:hover{
   background-color: #B22954;
 }
+
+#go_top_btn{
+  position: fixed;
+  top:50vh;
+  right: 0;
+  z-index: 999;
+  background-color: #000;
+}
+#go_under_btn{
+  position: fixed;
+  margin-top:20px;
+  top:50vh;
+  right: 0;
+  z-index: 999;
+  background-color: #000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+#table td:not(.edit_btn):not(.del_btn){
+  word-break: break-all;
+}
+.e_d_btn{
+  white-space: nowrap;
+}
